@@ -1,0 +1,23 @@
+{
+  "name": "nodejsexample",
+  "version": "1.0.0",
+  "description": "itm350 project2 ec",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BransinO1/itm350-BransinO1-test.git"
+  },
+  "keywords": [
+    "nodejs",
+    "itm350"
+  ],
+  "author": "Corbin Meacham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BransinO1/itm350-BransinO1-test/issues"
+  },
+  "homepage": "https://github.com/BransinO1/itm350-BransinO1-test#readme"
+}
