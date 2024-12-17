@@ -19,9 +19,11 @@ app.get('/heavy', (req, res) => {
   res.send({ sum });
 });
 
-// Start the server
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Server running on port ${port}`)
-})
+// Start the server only when this file is run directly
+if (require.main === module) {
+  app.listen(port, '0.0.0.0', () => {
+    console.log(`Server running on port ${port}`);
+  });
+}
 
-module.exports = app;
+module.exports = app; // Export the app for testing
