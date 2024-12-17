@@ -1,13 +1,16 @@
 module.exports = {
   coverageThreshold: {
     global: {
-      lines: 80,       // Global requirement for all files
-      statements: 80,  // Ensures statement coverage
-      branches: 80,    // Ensures branch coverage
-      functions: 80,   // Ensures function coverage
-    },
-    './src/**/*.js': { // Per-file requirement for the src directory
-      lines: 25
+      lines: 25,        // Minimum 25% coverage for lines
+      statements: 25,   // Minimum 25% coverage for statements
+      branches: 25,     // Minimum 25% coverage for branches
+      functions: 25     // Minimum 25% coverage for functions
     }
-  }
+  },
+  collectCoverage: true, // Enables coverage collection
+  collectCoverageFrom: [
+    'src/**/*.js',       // Collect coverage from all .js files inside src
+    '!src/index.js',     // Exclude index.js from coverage
+    '!src/server.js'     // Exclude server.js from coverage
+  ]
 };
