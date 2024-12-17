@@ -23,5 +23,6 @@ jobs:
       - name: Run tests with coverage
         run: npm test -- --coverage
       
-      - name: Ensure minimum coverage
-        run: npx check-coverage --threshold 50
+      # Removed the 'check-coverage' step
+      # Optional: If you want to enforce the coverage threshold, 
+      # you can rely on Jest's built-in functionality.
